@@ -6,4 +6,6 @@ import (
 
 func mapUrls() {
 	router.GET("/ping", controllers.Ping)
+	router.POST("/users", controllers.CreateUser)
+	router.GET("/users/:user-id", controllers.GetUser)
 }
