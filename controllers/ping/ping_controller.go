@@ -1,4 +1,4 @@
-package ping_controller
+package ping
 
 import (
 	"net/http"
@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+//Ping is a funct
 func Ping(c *gin.Context) {
 	c.String(http.StatusOK, "pong")
 }
